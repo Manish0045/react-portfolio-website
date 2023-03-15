@@ -6,13 +6,15 @@ import HeaderSocials from "./HeaderSocials";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Header = () => {
+
   const [text] = useTypewriter({
-    words: ['Coder', 'UI/UX developer', 'Web developer', 'Full stack developer'],
+    words: ['Backend Developer', 'UI/UX developer', 'Web developer', 'Full stack developer', 'Coder'],
     loop: 0,
     typeSpeed: 20,
     deleteSpeed: 10,
     delaySpeed: 2000
   });
+
   return (
     <header>
       <div className="container header__container">

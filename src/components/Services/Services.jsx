@@ -67,6 +67,30 @@ const Services = () => {
             </li>
           </div>
         </article>
+        {/* End of Web Development */}
+
+        <article className="service">
+          <div className="service__header">
+            <h3>Backend Development</h3>
+          </div>
+
+          <div className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </div>
+        </article>
+        {/* End of Backend Development */}
+
       </div>
     </section>
   );

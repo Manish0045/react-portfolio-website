@@ -1,37 +1,7 @@
 import React from "react";
-import proj1 from "./proj.jpg";
 import "./portfolio.css";
+import { projects } from "../../data";
 
-const data=[
-  {
-    id:1,
-    img:proj1,
-    title:'Interior Connect',
-    github:'https://github.com',
-    dribble:'https://dribbble.com/shots/20212408-NFT-marketplace'
-  },
-  {
-    id:1,
-    img:proj1,
-    title:'Interior Connect',
-    github:'https://github.com',
-    dribble:'https://dribbble.com/shots/20212408-NFT-marketplace'
-  },
-  {
-    id:1,
-    img:proj1,
-    title:'Interior Connect',
-    github:'https://github.com',
-    dribble:'https://dribbble.com/shots/20212408-NFT-marketplace'
-  },
-  {
-    id:1,
-    img:proj1,
-    title:'Interior Connect',
-    github:'https://github.com',
-    dribble:'https://dribbble.com/shots/20212408-NFT-marketplace'
-  },
-]
 
 const Portfolio = () => {
   return (
@@ -40,30 +10,34 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={proj1} alt="FirstProject" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a
-              href="https://github.com/"
-              className="btn"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-            <a
-              href="https://dribbble.com/shots/20212408-NFT-marketplace"
-              className="btn btn-primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
+        {projects.map((project) => (
+          <article className="portfolio__item">
+            <>
+              <div className="portfolio__item-image">
+                <img src={project.img} alt="FirstProject" />
+              </div>
+              <h3>{project.title}</h3>
+              <div className="portfolio__item-cta">
+                <a
+                  href={project.github}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+                <a
+                  href={project.dribble}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </>
+          </article>
+        ))}
       </div>
     </section>
   );

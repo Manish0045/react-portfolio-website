@@ -43,7 +43,7 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 40rem;
+    height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 4rem;
@@ -53,7 +53,6 @@ header {
 }
 
 img {
-    height: 25rem;
     border-radius: 12rem 12rem 0 0;
 }
 

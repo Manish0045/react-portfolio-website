@@ -21,8 +21,8 @@
     --transition: all 400ms ease;
 
     --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-md: 89%;
+    --container-width-sm: 95%;
 
 }
 
@@ -38,7 +38,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
-    line-height: 1.7;
+    line-height: 1.8;
     /* background-image: url(../src/assets/bg-texture.svg); */
 }
 
@@ -112,11 +112,12 @@ a:hover {
 }
 
 
-/* img{
+img {
     display: block;
-    width: 100%;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
-} */
+}
 
 
 /*=====================MEDIA QUERIES FOR MEDIUM DEVICES===================*/
